@@ -6,6 +6,7 @@ import android.graphics.Outline;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.view.View;
+import com.example.mylibrary.R.styleable;
 import android.view.ViewOutlineProvider;
 
 /**
@@ -26,8 +27,8 @@ public class MyImageView extends AppCompatImageView {
 
     public MyImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray typeArray = context.obtainStyledAttributes(attrs,R.styleable.MyImageView,defStyleAttr,0);
-        imageVIewRadius = typeArray.getInteger(R.styleable.MyImageView_radius,imageVIewRadius);
+        TypedArray typeArray = context.obtainStyledAttributes(attrs,styleable.MyImageView,defStyleAttr,0);
+        imageVIewRadius = typeArray.getInteger(styleable.MyImageView_radius,imageVIewRadius);
         typeArray.recycle();
         initView();
     }
