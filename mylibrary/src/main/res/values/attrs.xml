@@ -2,5 +2,6 @@
 <resources>
     <declare-styleable name="MyImageView">
         <attr name="radius" format="integer"/>
+        <attr name="margin" format="integer"/>
     </declare-styleable>
 </resources>
